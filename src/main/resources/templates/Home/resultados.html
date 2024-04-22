@@ -1,0 +1,64 @@
+<style>
+    table {
+        border-collapse: collapse;
+        width: 80%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    input[type=text] {
+        width: 60%;
+        padding: 12px 20px;
+        margin: 8px 10px;
+        box-sizing: border-box;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search...">
+
+<table id="dataTable">
+    <thead>
+    <tr>
+        <th>Competidor</th>
+        <th>Idade</th>
+        <th>Estado</th>
+        <th id="buttonCell"><button onclick="expandir(this)"><img src="/Imagens/arrow.png"></button></th>
+        <th class="columT hidden">Skill 1</th>
+        <th class="columT hidden">Skill 2</th>
+        <th class="columT hidden">Skill 3</th>
+        <th class="columT hidden">Skill 4</th>
+        <th class="columT hidden">Skill 5</th>
+        <th class="columT hidden">Skill 6</th>
+        <th>Total de Pontos</th>
+    </tr>
+    </thead>
+    <tbody id="resultados">
+    <tr th:each="resultado: ${resultados}">
+        <td th:text="${resultado.competidor}"></td>
+        <td th:text="${resultado.idade}"></td>
+        <td th:text="${resultado.sigla}"></td>
+        <td> </td>
+        <td class="columT hidden" th:text="${resultado.s1}"></td>
+        <td class="columT hidden" th:text="${resultado.s2}"></td>
+        <td class="columT hidden" th:text="${resultado.s3}"></td>
+        <td class="columT hidden" th:text="${resultado.s4}"></td>
+        <td class="columT hidden" th:text="${resultado.s5}"></td>
+        <td class="columT hidden" th:text="${resultado.s6}"></td>
+        <td th:text="${resultado.totalpontos}"></td>
+    </tr>
+    </tbody>
+</table>

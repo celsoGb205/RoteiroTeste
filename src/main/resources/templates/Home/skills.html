@@ -1,0 +1,27 @@
+<div>
+    <ul>
+        <li th:each="skill : ${skills}"  style="display: inline-block; margin-right: 10px;">
+            <button th:onclick="'funcaoJS('+${skill.idSkill}+')'" class="skill-button" th:text="${skill.descricao}"></button>
+        </li>
+    </ul>
+
+    <div th:include="Home/parcialModalidade"></div>
+
+</div>
+<script>
+    function funcaoJS(idSkill) {
+            $.ajax({
+                url: "/skills",
+                type: "POST",
+                data: {
+                    idSkill: idSkill
+                },
+                success: function(data) {
+                        $("#modalidades").html(data);
+                   },
+                error: function() {
+                   alert("Deu Merda")
+                }
+            });
+        }
+</script>

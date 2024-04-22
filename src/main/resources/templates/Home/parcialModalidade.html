@@ -1,0 +1,6 @@
+<div class="row" id="modalidades">
+    <div id="QDDI" th:each="modalidade : ${modalidades}"  th:class="'col-3 square m' + ${modalidade.idModalidade}">
+        <img src=/Imagens/01.jpg class="centered-image">
+        <h1 class="skill_descModalidade" th:text="${modalidade.nomeModalidade}"></h1>
+    </div>
+</div>

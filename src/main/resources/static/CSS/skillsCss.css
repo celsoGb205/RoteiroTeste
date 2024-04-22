@@ -1,0 +1,76 @@
+ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove as margens padrão da lista */
+    text-align: center;
+}
+
+/* Estilo para cada item da lista */
+li {
+    display: inline-block; /* Exibe os itens horizontalmente em linha */
+    margin-right: 20px; /* Adiciona um espaço entre os botões */
+    margin-top: 20px;
+}
+
+/* Estilo para os botões */
+.skill-button {
+    padding: 2px 15px; /* Define o preenchimento interno do botão */
+    background-color: #0189AB; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
+}
+
+/* Estilo quando o cursor está sobre o botão */
+.skill-button:hover {
+    background-color: #45a049; /* Altera a cor de fundo do botão quando o cursor está sobre ele */
+}
+.skill-button {
+        background-color: #0189AB;
+}
+
+.skill-button:focus {
+        background-color: #45a049;
+}
+
+.skill-button:focus + .skill-button {
+        background-color: white;
+}
+#QDDI{
+    overflow: auto;
+    max-height: 550px;
+    margin: 50px;
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px; /* Adicione preenchimento interno aos itens */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.row {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço em torno dos itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+/* Seletor de ID para o tamanho do texto */
+h1 {
+    margin-top: 40px;
+    font-weight: bold; /* Define o texto em negrito */
+    font-size: 12px; /* Tamanho da fonte em pixels */
+}
+.skill_descModalidade {
+    display: inline-block; /* Isso permite que o retângulo envolva o conteúdo do h1 */
+    padding: 10px 20px; /* Espaçamento interno do retângulo */
+    border: 2px solid #000; /* Borda do retângulo com largura de 2px e cor preta */
+    border-radius: 5px; /* Borda arredondada do retângulo */
+}
+.centered-image {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente dentro do quadrado */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do quadrado */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do quadrado */
+}

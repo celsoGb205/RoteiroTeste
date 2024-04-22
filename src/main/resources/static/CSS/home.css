@@ -1,0 +1,124 @@
+.nav-item {
+    margin-right: 30px; /* Adiciona espaço entre os itens */
+    display: flex; /* Faz com que os itens da navbar se comportem como flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+#logo {
+
+    width: 140px; /* Defina a largura desejada */
+    height: 40px; /* Mantém a proporção original da imagem */
+    margin-right:200px;
+}
+#perfilM{
+    width: 40px;
+    height: 40px;
+    margin-left: -200px;
+    border-radius: 100%;
+
+}
+#buttonLogin {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado padrão em links */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+#buttonLogin:hover {
+  background-color: #0189AB; /* Cor de fundo quando hover */
+}
+#buttonLogin{
+
+    width: 80px; /* Defina a largura desejada */
+    height: 40px; /* Mantém a proporção original da imagem */
+    margin-left:500px;
+    color: #EFEFEF;
+
+    border: 1px solid black;
+}
+#logout{
+
+    width: 80px; /* Defina a largura desejada */
+    height: 40px; /* Mantém a proporção original da imagem */
+    margin-left:250px;
+    color: #EFEFEF;
+
+    border: 1px solid black;
+}
+#check{
+    width: 20px; /* Defina a largura desejada */
+    height: 20px;
+    margin-left: 45px;
+    margin-top: 4px;
+}
+.square{
+    overflow: auto;
+    max-height: 550px;
+    margin-top: 470px;
+    width: 1560px;
+    height: 500px;
+}
+/*Tema Dark*/
+body{
+    &.dark{
+        background: #212529;
+    }
+
+}
+
+.navbar{
+        background: #0189AB !important;
+    &.dark{
+        background: #073954 !important;
+    }
+}
+#r{
+    &.dark{
+     color: #fff !important;
+     }
+ }
+
+.nav-link{
+    &.dark{
+        color: #fff ;
+    }
+}
+#carousel-control-prev{
+          color: #000 !important;
+     &.dark{
+         color: #fff ;
+     }
+}
+#carousel-control-next{
+         color: #000 !important;
+    &.dark{
+        color: #fff ;
+    }
+}
+.nav-link:hover {
+        color: white;
+        &.dark{
+            color: blue;
+        }
+}
+td{
+    &.dark{
+     color: #fff !important;
+     }
+ }
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+a{
+    text-decoration:none;
+}
